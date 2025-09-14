@@ -1,9 +1,9 @@
 ---
 name: Build container image
 on:
-  pull_request:
-    branches:
-      - main
+  # pull_request:
+    # branches:
+      # - main
   # schedule:
     # 1. Entry: Minute when the process will be started [0-60]
     # 2. Entry: Hour when the process will be started [0-23]
@@ -13,11 +13,11 @@ on:
     #
     # all x min = */x
     # - cron: '05 11 * * 0'  # 11:05am UTC every Sunday
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - '**/README.md'
+  # push:
+    # branches:
+      # - main
+    # paths-ignore:
+      # - '**/README.md'
   workflow_dispatch:
 
 env:
